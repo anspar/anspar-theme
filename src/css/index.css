@@ -1,0 +1,125 @@
+:root{
+    --as-dark: #1c2541;
+    --as-dark-dim: #3a506b1a;
+    --as-light: #fffffff9;
+    --as-light-dim: #ffffffa0;
+    --as-success: #a1c181;
+    --as-danger: #de3f4f;
+    --as-warning: #fcca46;
+    --as-shadow: drop-shadow(0 3px 8px var(--as-dark-dim));
+    --as-primary: #5bc0be;
+    --as-secondary: #3a506b;
+}
+
+[as-theme-dark=dark]{
+    --as-light: #1c2541;
+    --as-light-dim: #3a506b1a;
+    --as-dark: #fffffff9;
+    --as-dark-dim: #ffffffa0;
+}
+
+.as-btn-primary{
+    background-color: var(--as-primary) !important;
+    color: #fffffff9;
+}
+
+.as-btn-secondary{
+    background-color: var(--as-secondary)!important;
+    color: #fffffff9;
+}
+
+.as-btn-primary:hover, .as-btn-secondary:hover, .as-btn:hover{
+    transform: scale(1.03);
+    color: var(--as-light);
+}
+
+.as-bg-light{
+    background-color: var(--as-light)!important;
+}
+
+.as-text-light{
+    color: var(--as-light)!important;
+}
+
+.as-bg-dark{
+    background-color: var(--as-dark)!important;
+}
+
+.as-text-dark{
+    color: var(--as-dark)!important;
+}
+
+.as-bg-primary{
+    background-color: var(--as-primary)!important;
+}
+
+.as-text-primary{
+    color: var(--as-primary)!important;
+}
+
+.as-bg-secondary{
+    background-color: var(--as-secondary)!important;
+}
+
+.as-text-secondary{
+    color: var(--as-secondary)!important;
+}
+
+.as-bg-danger{
+    background-color: var(--as-danger)!important;
+}
+
+.as-text-danger{
+    color: var(--as-danger)!important;
+}
+
+.as-bg-success{
+    background-color: var(--as-success)!important;
+}
+
+.as-text-success{
+    color: var(--as-success)!important;
+}
+
+.as-bg-warning{
+    background-color: var(--as-warning)!important;
+}
+
+.as-text-warning{
+    color: var(--as-warning)!important;
+}
+
+.as-shadow-lg{
+    box-shadow: 0px 3px 10px 4px var(--as-dark-dim);
+}
+
+.as-shadow{
+    box-shadow: 0px 2px 8px 2px var(--as-dark-dim);
+}
+
+.as-shadow-sm{
+    box-shadow: 0px 2px 8px 0px var(--as-dark-dim);
+}
+
+.as-pointer{
+    cursor: pointer;
+}
+
+.as-wrapword {
+    white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    white-space: pre-wrap;       /* css-3 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    white-space: -webkit-pre-wrap; /* Newer versions of Chrome/Safari*/
+    word-break: break-all;
+    white-space: normal;
+}
+
+.as-no-default-style{
+    border-style: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    white-space:nowrap;
+}
