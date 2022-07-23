@@ -28,7 +28,7 @@ jobs:
         run: npm i && npm test && npm run rollup
 
       - name: Upload release
-        run: npm publish — access public
+        run: npm publish -- access public
         env:
           CI: true
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
