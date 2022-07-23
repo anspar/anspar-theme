@@ -1,6 +1,6 @@
 {
   "name": "@anspar/anspar-theme",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "React component for Anspar theme",
   "scripts": {
     "rollup": "rollup -c",
