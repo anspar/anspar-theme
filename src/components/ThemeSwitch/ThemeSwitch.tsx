@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import styles from "./ThemeSwitch.css";
-const moon_img = require("../../imgs/moon-solid.svg");
-const sun_img = require("../../imgs/certificate-solid.svg");
+import "./ThemeSwitch.css";
+const moon_img = require("../imgs/moon-solid.svg");
+const sun_img = require("../imgs/certificate-solid.svg");
 
 export interface ThemeSwitchProps{
   size?: string
@@ -27,9 +27,9 @@ export function ThemeSwitch(props: ThemeSwitchProps) {
     <div style={{width: props.size?props.size:"30px"}}>
       {
         themeDark?
-        <img src={sun_img} alt="theme_sun" style={styles.img} onClick={()=>setThemeDark(false)} />
+        <img src={sun_img} alt="theme_sun" className="as-theme-img" onClick={()=>setThemeDark(false)} />
         :
-        <img src={moon_img} alt="theme_moon" style={styles.img} onClick={()=>setThemeDark(true)}/>
+        <img src={moon_img} alt="theme_moon" className="as-theme-img" onClick={()=>setThemeDark(true)}/>
       }
     </div>
   );
