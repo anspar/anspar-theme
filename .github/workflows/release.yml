@@ -25,8 +25,11 @@ jobs:
           registry-url: https://registry.npmjs.org/
 
       - name: build 
-        run: npm i && npm test && npm run rollup && node update_pkg_version.js 0.2.${{ github.run_number }}
+        run: npm i && npm test && npm run rollup
 
+      - name: update version
+        run: node update_pkg_version.js 0.2.${{ github.run_number }}
+         
       - name: Upload release
         run: npm publish --access public
         env:

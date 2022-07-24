@@ -4,8 +4,13 @@ if(args.length!==1) {
     process.exit(1);
 }
 
-const fs = require("fs");
-const pkg = require("./package.json");
+
+let pkg = require("./package.json");
 pkg.version=args[0];
 
+console.log("Updating Version ...");
+const fs = require("fs");
 fs.writeFileSync("./package.json", JSON.stringify(pkg));
+
+pkg = require("./package.json");
+console.log("Updated version to: ", pkg.version);
