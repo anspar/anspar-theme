@@ -4,6 +4,7 @@ import typescript from "@rollup/plugin-typescript";
 import postcss from "rollup-plugin-postcss";
 import dts from "rollup-plugin-dts";
 import copy from 'rollup-plugin-copy';
+import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import del from 'rollup-plugin-delete';
 
 const packageJson = require("./package.json");
@@ -11,9 +12,6 @@ const packageJson = require("./package.json");
 export default [
   {
     input: "src/index.ts",
-    external:[
-      "react"
-    ],
     output: [
       {
         file: packageJson.main,
@@ -28,6 +26,7 @@ export default [
     ],
     plugins: [
       del({ targets: 'dist/*' }),
+      peerDepsExternal(),
       resolve(),
       postcss({
         minimize: true,

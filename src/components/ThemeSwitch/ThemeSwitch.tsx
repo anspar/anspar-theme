@@ -7,8 +7,11 @@ export interface ThemeSwitchProps{
   size?: string
 }
 
+let themeSetDark: boolean = false;
+
 const switchTheme = (toDark: boolean)=>{
   const root = document.querySelector(":root");
+  themeSetDark = toDark;
   if(toDark){
     root?.setAttribute("as-theme-dark", "dark");
     localStorage.setItem("as-theme", "dark");
@@ -18,8 +21,9 @@ const switchTheme = (toDark: boolean)=>{
   localStorage.setItem("as-theme", "light");
 }
 
+export function isThemeSetDark(){return themeSetDark}
 export function ThemeSwitch(props: ThemeSwitchProps) {
-  const [themeDark, setThemeDark] = useState(false);
+  const [themeDark, setThemeDark] = useState(localStorage.getItem("as-theme")==="dark");
   useEffect(()=>{
     switchTheme(themeDark);
   }, [themeDark]);
