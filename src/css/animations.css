@@ -71,7 +71,7 @@
 }
 
 .as-scale_bounce{
-    animation: scale_bounce 1.5s cubic-bezier(.5, 0.05, 1, .5) infinite;
+    animation: as-scale_bounce 1.5s cubic-bezier(.5, 0.05, 1, .5) infinite;
 }
 
 @keyframes as-scale_bounce {
@@ -86,34 +86,29 @@
     }
 }
 
-.as-item_primary_blink {
+.as-blink {
     color: var(--as-primary);
-    animation: blink 3s linear infinite;
+    animation: as-blink 3s linear infinite;
 }
 
 @keyframes as-blink {
     0% {
-        color: var(--as-primary);
         opacity: 1;
     }
 
     25% {
-        color: var(--as-dark);
         opacity: 0.3;
     }
 
     50% {
-        color: var(--as-primary);
         opacity: 1;
     }
 
     75% {
-        color: var(--as-dark);
         opacity: 0.3;
     }
 
     100% {
-        color: var(--as-primary);
         opacity: 1;
     }
 }

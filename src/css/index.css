@@ -20,15 +20,24 @@
 
 .as-btn-primary{
     background-color: var(--as-primary) !important;
-    color: #fffffff9;
+    color: #fffffff9 !important;
 }
 
 .as-btn-secondary{
     background-color: var(--as-secondary)!important;
-    color: #fffffff9;
+    color: #fffffff9 !important;
 }
 
-.as-btn-primary:hover, .as-btn-secondary:hover, .as-btn:hover{
+.as-btn{
+    background-color: var(--as-dark);
+    color: var(--as-light);
+    padding: 0.4rem;
+    border-radius: 0.3rem;
+    border-style: none;
+    cursor: pointer;
+}
+
+.as-btn:hover{
     transform: scale(1.03);
     color: var(--as-light);
 }
