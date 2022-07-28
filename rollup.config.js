@@ -3,7 +3,6 @@ import commonjs from "@rollup/plugin-commonjs";
 import typescript from "@rollup/plugin-typescript";
 import postcss from "rollup-plugin-postcss";
 import dts from "rollup-plugin-dts";
-import copy from 'rollup-plugin-copy';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import del from 'rollup-plugin-delete';
 
@@ -35,15 +34,6 @@ export default [
       }),
       commonjs(),
       typescript({ tsconfig: "./tsconfig.json" }),
-      copy({
-        targets: [
-          {
-            src: ["src/components/imgs/*"],
-            dest: "./dist/imgs"
-          },
-        ],
-        verbose: true
-      })
     ],
   },
   {
