@@ -29,16 +29,13 @@ Check [css](src/css) folder for full list
 
     export default App(){
         return (
-            <ThemeSwitch />
-            ...
-            OR
-            <ThemeSwitch size="150px"/>
+            <ThemeSwitch style={...} className="..."/>
         )
     }
 ```
 
-## [Examples](https://anspar.github.io/anspar-theme)
+### [Examples](https://anspar.github.io/anspar-theme)
 
-## Ask question at [Discord](https://discord.gg/ENQfPEcrZJ)
+### Ask question at [Discord](https://discord.gg/ENQfPEcrZJ)
 
 [anspar.io](https://anspar.io)

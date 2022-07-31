@@ -114,7 +114,7 @@
     cursor: pointer;
 }
 
-.as-wrapword {
+.as-wrap-word {
     white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
     white-space: -pre-wrap;      /* Opera 4-6 */
     white-space: -o-pre-wrap;    /* Opera 7 */
