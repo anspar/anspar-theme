@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import themeSwitch from "./ThemeSwitch.css";
 import Sun from "../SwitchButtons/sun-solid";
 import Moon from "../SwitchButtons/moon-solid";
 
 export interface ThemeSwitchProps{
-  size?: string
+  style?: React.CSSProperties,
+  className?: string
 }
 
 let themeSetDark: boolean = false;
@@ -28,12 +28,12 @@ export function ThemeSwitch(props: ThemeSwitchProps) {
     switchTheme(themeDark);
   }, [themeDark]);
   return (
-    <div style={{width: props.size?props.size:"30px"}}>
+    <div style={props.style} className={props.className}>
       {
         themeDark?
-        <Sun width={props.size} onClick={()=>setThemeDark(false)}/>
+        <Sun onClick={()=>setThemeDark(false)}/>
         :
-        <Moon width={props.size} onClick={()=>setThemeDark(true)}/>
+        <Moon onClick={()=>setThemeDark(true)}/>
       }
     </div>
   );

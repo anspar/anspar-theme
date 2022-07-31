@@ -59,11 +59,27 @@ const Template4: ComponentStory<typeof ThemeSwitch> = (args) => {
 }
 
 export const Default = Template.bind({});
-export const Large = Template.bind({});
-Large.args = {
-  size: "140px"
+Default.args = {
+  style: {
+    width: "140px" 
+  }
 }
 
 export const Buttons = Template2.bind({});
+Buttons.args = {
+  style: {
+    width: "30px"
+  }
+}
 export const Text = Template3.bind({});
+Text.args = {
+  style: {
+    width: "30px"
+  }
+}
 export const Animations = Template4.bind({});
+Animations.args = {
+  style: {
+    width: "30px"
+  }
+}
