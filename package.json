@@ -63,7 +63,10 @@
   ],
   "types": "dist/index.d.ts",
   "exports": {
-    ".": "./dist/cjs/index.js",
+    ".": {
+      "require": "./dist/cjs/index.js",
+      "import": "./dist/esm/index.js"
+    },
     "./styles.css": "./dist/cjs/styles.min.css"
   },
   "repository": {
