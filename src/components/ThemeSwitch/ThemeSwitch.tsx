@@ -25,6 +25,10 @@ export function isThemeSetDark(){return themeSetDark}
 export function ThemeSwitch(props: ThemeSwitchProps) {
   const [themeDark, setThemeDark] = useState(localStorage.getItem("as-theme")==="dark");
   useEffect(()=>{
+    if(localStorage.getItem("as-theme")!==null) return
+    setThemeDark(window.matchMedia("(prefers-color-scheme: dark)").matches);
+  }, [])
+  useEffect(()=>{
     switchTheme(themeDark);
   }, [themeDark]);
   return (
