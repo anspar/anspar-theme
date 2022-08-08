@@ -62,7 +62,7 @@
   ],
   "types": "dist/index.d.ts",
   "exports": {
-    ".": "./dist/esm/index.mjs",
+    ".": "./dist/index.mjs",
     "./styles.css": "./dist/styles.min.css"
   },
   "repository": {
