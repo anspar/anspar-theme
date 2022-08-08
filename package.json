@@ -56,19 +56,14 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
+  "main": "dist/index.mjs",
   "files": [
     "dist"
   ],
   "types": "dist/index.d.ts",
   "exports": {
-    ".": {
-      "require": "./dist/cjs/index.js",
-      "import": "./dist/esm/index.js",
-      "default": "./dist/esm/index.js"
-    },
-    "./styles.css": "./dist/cjs/styles.min.css"
+    ".": "./dist/esm/index.mjs",
+    "./styles.css": "./dist/styles.min.css"
   },
   "repository": {
     "type": "git",
