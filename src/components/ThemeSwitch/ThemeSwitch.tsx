@@ -23,7 +23,7 @@ const switchTheme = (toDark: boolean)=>{
 
 export function isThemeSetDark(){return themeSetDark}
 export function ThemeSwitch(props: ThemeSwitchProps) {
-  const [themeDark, setThemeDark] = useState(false);
+  const [themeDark, setThemeDark] = useState<boolean|undefined>();
   useEffect(()=>{
     if(localStorage.getItem("as-theme")!==null) {
       setThemeDark(localStorage.getItem("as-theme")==="dark")
@@ -33,6 +33,7 @@ export function ThemeSwitch(props: ThemeSwitchProps) {
     setThemeDark(window.matchMedia("(prefers-color-scheme: dark)").matches);
   }, [])
   useEffect(()=>{
+    if(themeDark===undefined)return
     switchTheme(themeDark);
   }, [themeDark]);
   return (
