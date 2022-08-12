@@ -14,18 +14,22 @@ const switchTheme = (toDark: boolean)=>{
   themeSetDark = toDark;
   if(toDark){
     root?.setAttribute("as-theme-dark", "dark");
-    localStorage.setItem("as-theme", "dark");
+    localStorage?.setItem("as-theme", "dark");
     return
   }
   root?.setAttribute("as-theme-dark", "light");
-  localStorage.setItem("as-theme", "light");
+  localStorage?.setItem("as-theme", "light");
 }
 
 export function isThemeSetDark(){return themeSetDark}
 export function ThemeSwitch(props: ThemeSwitchProps) {
-  const [themeDark, setThemeDark] = useState(localStorage.getItem("as-theme")==="dark");
+  const [themeDark, setThemeDark] = useState(false);
   useEffect(()=>{
-    if(localStorage.getItem("as-theme")!==null) return
+    if(localStorage.getItem("as-theme")!==null) {
+      setThemeDark(localStorage.getItem("as-theme")==="dark")
+      return
+    }
+  
     setThemeDark(window.matchMedia("(prefers-color-scheme: dark)").matches);
   }, [])
   useEffect(()=>{

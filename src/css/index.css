@@ -16,6 +16,7 @@
     --as-light-dim: #3a506b1a;
     --as-dark: #fffffff9;
     --as-dark-dim: #ffffffa0;
+    color-scheme: dark;
 }
 
 .as-btn-primary{
