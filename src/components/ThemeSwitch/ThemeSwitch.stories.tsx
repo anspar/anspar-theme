@@ -20,6 +20,7 @@ const Template2: ComponentStory<typeof ThemeSwitch> = (args) => {
     <button className='as-btn'>Default</button>
     <button className='as-btn as-bg-warning'>Warning</button>
     <button className='as-btn as-btn-primary'>Primary</button>
+    <button className='as-btn' style={{backgroundColor:'var(--as-primary-dim)'}}>Primary Dim</button>
     <button className='as-btn as-btn-secondary'>Secondary</button>
     <button className='as-btn as-bg-danger'>Danger</button>
     <button className='as-btn as-bg-success'>Success</button>
