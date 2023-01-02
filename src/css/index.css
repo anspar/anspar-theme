@@ -1,4 +1,5 @@
 :root{
+    --as-anspar: #5bc0be;
     --as-dark: #1c2541;
     --as-dark-dim: #3a506b1a;
     --as-light: #fffffff9;
@@ -7,13 +8,12 @@
     --as-danger: #de3f4f;
     --as-warning: #fcca46;
     --as-shadow: drop-shadow(0 3px 8px var(--as-dark-dim));
-    --as-primary: #5bc0be;
-    --as-primary-complementary: #C05B5D;
-    --as-primary-analogous: #5B90C0;
-    --as-primary-triadic: #C0BE5B;
-    --as-primary-dim: #5bc0bea0;
-    --as-secondary: #1C2734;
-    --as-secondary-dim: #1C2734a0;
+    --as-primary: #2b262d;
+    --as-primary-dim: #2b262da0;
+    --as-secondary: #9f496e;
+    --as-secondary-dim: #9f496ea0;
+    --as-common: #f2ebe5;
+    --as-highlight: #647295;
 }
 
 [as-theme-dark=dark]{
@@ -21,35 +21,46 @@
     --as-light-dim: #3a506b1a;
     --as-dark: #fffffff9;
     --as-dark-dim: #ffffffa0;
+    --as-primary: #edb518;
+    --as-primary-dim: #edb518a0;
+    --as-secondary: #000407;
+    --as-secondary-dim: #000407a0;
+    --as-common: #79031d;
+    --as-highlight: #f5f7f7;
     color-scheme: dark;
 }
 
 .as-btn-primary{
     background-color: var(--as-primary) !important;
-    color: #fffffff9 !important;
+    /* color: var(--as-secondary) !important; */
 }
 
 .as-btn-secondary{
     background-color: var(--as-secondary)!important;
-    color: #fffffff9 !important;
+    /* color: var(--as-primary) !important; */
 }
 
 .as-btn{
     background-color: var(--as-dark);
-    color: var(--as-light);
+    color: var(--as-common);
     padding: 0.4rem;
     border-radius: 0.3rem;
     border-style: none;
+    font-weight: 600;
     cursor: pointer;
 }
 
 .as-btn:hover{
-    transform: scale(1.03);
-    color: var(--as-light);
+    transform: scale(1.02);
+    /* color: var(--as-light); */
 }
 
 .as-bg-light{
     background-color: var(--as-light)!important;
+}
+
+.as-text{
+    color: var(--as-highlight) !important;
 }
 
 .as-text-light{
@@ -66,6 +77,10 @@
 
 .as-bg-primary{
     background-color: var(--as-primary)!important;
+}
+
+.as-text-anspar{
+    color: var(--as-anspar) !important;
 }
 
 .as-text-primary{
