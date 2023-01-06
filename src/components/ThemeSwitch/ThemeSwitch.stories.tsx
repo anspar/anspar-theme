@@ -67,7 +67,7 @@ const Template4: ComponentStory<typeof ThemeSwitch> = (args) => {
   }}>
     <ThemeSwitch {...args} />
     <span className='as-text-primary as-text-bold as-text-size-xs as-pointer as-blink'>Blink</span>
-    <span className='as-text-dark as-text-size-sm as-pointer as-highlight-hover-bg'>Highlight bg</span>
+    <span className='as-text-size-sm as-pointer as-highlight-hover-bg'>Highlight bg</span>
     <span className='as-text-dark as-text-size-n as-pointer as-zoom-hover'>Zoom</span>
     <span className='as-text-danger as-text-size-l as-pointer as-scale_bounce'>Bounce</span>
     <span className='as-text-success as-text-size-xl as-pointer as-lift-up-hover'>Lift up</span>

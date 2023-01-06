@@ -1,24 +1,16 @@
 .as-loading{
     color: transparent !important;
-    background: linear-gradient(80deg, var(--as-light) 30%, var(--as-primary) 50%, var(--as-light) 70%);
+    background: linear-gradient(80deg, transparent 30%, var(--as-primary-dim) 50%, transparent 70%);
     /* opacity: 0.4; */
     background-size: 400%;
     animation: as-loading 1.5s ease-in-out infinite;
 }
 
-.as-dot-slide-anim{
-    color: rgba(0, 0, 0, 0);
-    /* background: linear-gradient(80deg, rgba(0,0,0,0) 30%, var(--as-primary) 50%, rgba(0,0,0,0) 70%); */
-    background: radial-gradient(circle, gray 5%, rgba(0,0,0,0) 0%);
-    background-size: 400%;
-    animation: loading 3.5s ease-in-out infinite;
-}
-
 .as-highlight-hover-bg:hover{
-    background: var(--as-primary);
+    background: linear-gradient(80deg, var(--as-primary) 10%, var(--as-primary-dim) 20%, transparent 70%);
     background-size: 400% !important;
-    background: linear-gradient(80deg, var(--as-primary) 30%, var(--as-primary) 50%, transparent 70%);
-    animation: loading 0.3s ease-in-out 1 !important;
+    animation: as-loading 0.4s ease-in-out 1 !important;
+    color: var(--as-common);
 }
 
 .as-highlight-hover-primary:hover {
@@ -64,7 +56,10 @@
 }
 
 .as-zoom-hover-bg:hover {
-    background: var(--as-light);
+    background: linear-gradient(80deg, var(--as-primary) 10%, var(--as-primary-dim) 20%, transparent 70%);
+    background-size: 400% !important;
+    animation: as-loading 0.4s ease-in-out 1 !important;
+    color: var(--as-common);
     border-radius: 5px;
     border-style: none;
     transform: scale(1.03);

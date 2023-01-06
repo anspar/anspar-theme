@@ -32,12 +32,14 @@
 
 .as-btn-primary{
     background-color: var(--as-primary) !important;
-    /* color: var(--as-secondary) !important; */
 }
 
 .as-btn-secondary{
     background-color: var(--as-secondary)!important;
-    /* color: var(--as-primary) !important; */
+}
+
+.as-btn-highlight{
+    background-color: var(--as-highlight)!important;
 }
 
 .as-btn{
@@ -63,6 +65,22 @@
     color: var(--as-highlight) !important;
 }
 
+.as-text-common{
+    color: var(--as-common) !important;
+}
+
+.as-bg-common{
+    background-color: var(--as-common) !important;
+}
+
+.as-text-anspar{
+    color: var(--as-anspar) !important;
+}
+
+.as-bg-anspar{
+    background-color: var(--as-anspar) !important;
+}
+
 .as-text-light{
     color: var(--as-light)!important;
 }
@@ -77,10 +95,6 @@
 
 .as-bg-primary{
     background-color: var(--as-primary)!important;
-}
-
-.as-text-anspar{
-    color: var(--as-anspar) !important;
 }
 
 .as-text-primary{
