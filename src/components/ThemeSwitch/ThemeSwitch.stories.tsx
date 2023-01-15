@@ -12,11 +12,13 @@ export default {
 const Template: ComponentStory<typeof ThemeSwitch> = (args) => {
   return <>
     <ThemeSwitch {...args} />
-    <div style={{width: '100%', 
-                justifyContent: 'center', 
-                alignItems: 'center',
-                display: 'flex',
-                flexDirection: 'column'}}>
+    <div style={{
+      width: '100%',
+      justifyContent: 'center',
+      alignItems: 'center',
+      display: 'flex',
+      flexDirection: 'column'
+    }}>
     </div>
   </>
 }
@@ -75,6 +77,26 @@ const Template4: ComponentStory<typeof ThemeSwitch> = (args) => {
   </div>
 }
 
+const Template5: ComponentStory<typeof ThemeSwitch> = (args) => {
+  return <div style={{
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    padding: "1rem 0.5rem"
+  }}>
+    <ThemeSwitch {...args} />
+    <span className='as-text-bold as-text-size-n as-np-in as-border as-px as-py'>
+      Neumorph In
+    </span>
+    <span className='as-text-bold as-text-size-n as-np-out as-border as-px as-py'>
+      Neumorph Out
+    </span>
+    <span className='as-text-bold as-text-size-n as-np-hover as-border as-px as-py'>
+      Neumorph Out Hover
+    </span>
+  </div>
+}
+
 export const Default = Template.bind({});
 Default.args = {
   style: {
@@ -95,6 +117,12 @@ Text.args = {
   }
 }
 export const Animations = Template4.bind({});
+Animations.args = {
+  style: {
+    width: "30px"
+  }
+}
+export const Neumorph = Template5.bind({});
 Animations.args = {
   style: {
     width: "30px"
