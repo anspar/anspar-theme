@@ -1,24 +1,37 @@
-.as-text-size-xl{
+.as-text-size-xl {
     font-size: 40px !important;
 }
-.as-text-size-l{
+
+.as-text-size-l {
     font-size: 30px !important;
 }
-.as-text-size-n{
+
+.as-text-size-n {
     font-size: 20px !important;
 }
-.as-text-size-sm{
+
+.as-text-size-sm {
     font-size: 15px !important;
 }
-.as-text-size-xs{
+
+.as-text-size-xs {
     font-size: 12px !important;
 }
-@media only screen and (max-width: 1199px){
-    .as-text-size-xl{ font-size: 30px !important; }
-    .as-text-size-l{ font-size: 20px !important; }
-    .as-text-size-n{ font-size: 15px !important; }
+
+@media only screen and (max-width: 1199px) {
+    .as-text-size-xl {
+        font-size: 30px !important;
+    }
+
+    .as-text-size-l {
+        font-size: 20px !important;
+    }
+
+    .as-text-size-n {
+        font-size: 15px !important;
+    }
 }
 
-.as-text-bold{
+.as-text-bold {
     font-weight: bold;
 }

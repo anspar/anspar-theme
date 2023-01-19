@@ -17,7 +17,7 @@
     --as-np-in-light: #f5efeb;
     --as-np-in-dark: #e0d0c2;
     --as-np-out-light: #f5efeb;
-    --as-np-out-dark: #e0d0c2;
+    --as-np-out-dark: #dbd1c8;
 }
 
 [as-theme-dark=dark] {
@@ -193,8 +193,8 @@
 
 .as-np-out,
 .as-np-hover:hover {
-    box-shadow: 0px 3px 16px 2px var(--as-np-out-dark),
-        0px -3px 16px 2px var(--as-np-out-light);
+    box-shadow: 0px 4px 12px 3px var(--as-np-out-dark),
+        0px -4px 14px 3px var(--as-np-out-light);
 }
 
 .as-border {

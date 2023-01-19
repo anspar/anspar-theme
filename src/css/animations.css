@@ -1,4 +1,4 @@
-.as-loading{
+.as-loading {
     color: transparent !important;
     background: linear-gradient(80deg, transparent 30%, var(--as-primary-dim) 50%, transparent 70%);
     /* opacity: 0.4; */
@@ -6,7 +6,7 @@
     animation: as-loading 1.5s ease-in-out infinite;
 }
 
-.as-highlight-hover-bg:hover{
+.as-highlight-hover-bg:hover {
     background: linear-gradient(80deg, var(--as-primary) 10%, var(--as-primary-dim) 20%, transparent 70%);
     background-size: 400% !important;
     animation: as-loading 0.4s ease-in-out 1 !important;
@@ -22,31 +22,49 @@
 }
 
 @keyframes as-loading {
-    from{
+    from {
         background-position: 100% 50%;
-    }to{
+    }
+
+    to {
         background-position: 0% 100%;
     }
 }
 
-.as-fade-in-one{
+.as-fade-in-one {
     animation: as-fade-in-bottom 0.5s 1;
 }
 
-@keyframes as-fade-in-top{
-    from{ opacity: 0.0; transform: translateY(-200px); }
-    to{opacity: 1.0; transform: translateY(0px);}
+@keyframes as-fade-in-top {
+    from {
+        opacity: 0.0;
+        transform: translateY(-200px);
+    }
+
+    to {
+        opacity: 1.0;
+        transform: translateY(0px);
+    }
 }
 
-@keyframes as-fade-in-bottom{
-    from{ opacity: 0.0; transform: translateY(200px); }
-    to{opacity: 1.0; transform: translateY(0px);}
+@keyframes as-fade-in-bottom {
+    from {
+        opacity: 0.0;
+        transform: translateY(200px);
+    }
+
+    to {
+        opacity: 1.0;
+        transform: translateY(0px);
+    }
 }
 
-.as-zoom-hover, .as-zoom-hover-bg,  .as-zoom-hover-lg{
+.as-zoom-hover,
+.as-zoom-hover-bg,
+.as-zoom-hover-lg {
     transition: transform .2s;
 }
-  
+
 .as-zoom-hover:hover {
     transform: scale(1.03) !important;
 }
@@ -65,19 +83,21 @@
     transform: scale(1.03);
 }
 
-.as-scale_bounce{
+.as-scale_bounce {
     animation: as-scale_bounce 1.5s cubic-bezier(.5, 0.05, 1, .5) infinite;
 }
 
 @keyframes as-scale_bounce {
     0% {
-        transform: scale(1,1);
+        transform: scale(1, 1);
     }
+
     50% {
-        transform: scale(1.1,1.1);
+        transform: scale(1.1, 1.1);
     }
-    100%{
-        transform: scale(1,1);
+
+    100% {
+        transform: scale(1, 1);
     }
 }
 
@@ -108,7 +128,7 @@
     }
 }
 
-.as-lift-up-hover:hover{
+.as-lift-up-hover:hover {
     transform: translateY(-5px);
     transition: transform 0.2s linear;
 }
