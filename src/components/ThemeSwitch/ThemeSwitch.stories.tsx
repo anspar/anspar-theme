@@ -11,14 +11,16 @@ export default {
 
 const Template: ComponentStory<typeof ThemeSwitch> = (args) => {
   return <>
-    <ThemeSwitch {...args} />
     <div style={{
       width: '100%',
+      minHeight: '10vh',
       justifyContent: 'center',
       alignItems: 'center',
       display: 'flex',
-      flexDirection: 'column'
+      flexDirection: 'column',
+      backgroundColor: "var(--as-common)"
     }}>
+      <ThemeSwitch {...args} />
     </div>
   </>
 }
@@ -27,7 +29,8 @@ const Template2: ComponentStory<typeof ThemeSwitch> = (args) => {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    padding: "1rem 0.5rem"
+    padding: "1rem 0.5rem",
+    backgroundColor: "var(--as-common)"
   }}>
     <ThemeSwitch {...args} />
     <button className='as-btn'>Default</button>
@@ -46,7 +49,8 @@ const Template3: ComponentStory<typeof ThemeSwitch> = (args) => {
     justifyContent: "space-between",
     alignItems: "center",
     flexWrap: "wrap",
-    padding: "1rem 0.5rem"
+    padding: "1rem 0.5rem",
+    backgroundColor: "var(--as-common)"
   }}>
     <ThemeSwitch {...args} />
     <span className='as-text as-text-bold as-text-size-xs'>Default</span>
@@ -65,7 +69,8 @@ const Template4: ComponentStory<typeof ThemeSwitch> = (args) => {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    padding: "1rem 0.5rem"
+    padding: "1rem 0.5rem",
+    backgroundColor: "var(--as-common)"
   }}>
     <ThemeSwitch {...args} />
     <span className='as-text-primary as-text-bold as-text-size-xs as-pointer as-blink'>Blink</span>
@@ -82,7 +87,8 @@ const Template5: ComponentStory<typeof ThemeSwitch> = (args) => {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    padding: "1rem 0.5rem"
+    padding: "1rem 0.5rem",
+    backgroundColor: "var(--as-common)"
   }}>
     <ThemeSwitch {...args} />
     <span className='as-text-bold as-text-size-n as-np-in as-border as-px as-py'>

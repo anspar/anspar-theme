@@ -12,12 +12,12 @@
     --as-primary-dim: #2b262da0;
     --as-secondary: #9f496e;
     --as-secondary-dim: #9f496ea0;
-    --as-common: #f2ebe5;
+    --as-common: #e3ddd8;
     --as-highlight: #647295;
-    --as-np-in-light: #f5efeb;
-    --as-np-in-dark: #e0d0c2;
-    --as-np-out-light: #f5efeb;
-    --as-np-out-dark: #dbd1c8;
+    --as-np-in-light: #ffffffcc;
+    --as-np-in-dark: #00000021;
+    --as-np-out-light: #ffffffcc;
+    --as-np-out-dark: #00000027;
 }
 
 [as-theme-dark=dark] {
@@ -34,7 +34,7 @@
     --as-np-in-light: #ad0429;
     --as-np-in-dark: #460211;
     --as-np-out-light: #ad0429;
-    --as-np-out-dark: #543138;
+    --as-np-out-dark: #460211e1;
     color-scheme: dark;
 }
 
@@ -187,14 +187,19 @@
 }
 
 .as-np-in {
-    box-shadow: inset 0px 3px 16px 2px var(--as-np-in-dark),
-        inset 0px -3px 16px 2px var(--as-np-in-light);
+    box-shadow: inset 0px 3px 6px 2px var(--as-np-in-dark),
+        inset 0px -3px 8px 2px var(--as-np-in-light);
+}
+
+.as-np-hover{
+    transition: all 0.5s;
 }
 
 .as-np-out,
 .as-np-hover:hover {
-    box-shadow: 0px 4px 12px 3px var(--as-np-out-dark),
-        0px -4px 14px 3px var(--as-np-out-light);
+    box-shadow: 0px 4px 10px 2px var(--as-np-out-dark),
+        0px -2px 7px 4px var(--as-np-out-light);
+    transform: scale(1.03);
 }
 
 .as-border {
